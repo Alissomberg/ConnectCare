@@ -8,7 +8,9 @@
     list-style: none;
     font-family: "Bevan", serif;
 }
-
+a{
+    color: inherit;
+}
 .pbackground{
     background-color: var(--rneon2);
 }
