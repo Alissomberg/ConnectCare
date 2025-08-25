@@ -159,6 +159,10 @@ section,footer{
     padding: 2.7rem 0;
 }
 
+a:active{
+    color: #33123d;
+}
+
 /* responsive */
 @media(max-width: 1075px){
         .main-text h1{
