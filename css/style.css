@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Bevan", serif;
+}
+
+.pbackground{
+    background-color: var(--rneon2);
+}
+
+body{
+    color: var(--rneon2);
+}
+
+.sub {
+  background-color: var(--lc);  
+
+}
+
+/* variáveis com a paleta de cores */
+:root{
+    --lilas: #a44ccd;
+    --rneon: #43224c;
+    --rneon2: #440e5a;
+    --rc: #e2d2ff;
+    --lc: #f5efe5;
+    --btn-gradient: linear-gradient(#a44ccd,#43224c);
+}
+
+/* Classes reutilizáveis */
+.container{
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+.btn{
+    padding:10px 25px;
+    border: none;
+    cursor:pointer;
+    font-size: 18px;
+    background-image: var(--btn-gradient);
+    color: white;
+}
+/* Classes do site */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo a{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu li{
+    margin: 0 35px;
+    font-size: 20px;
+}
+
+h1,h2{
+    color:white;
+    font-weight: normal;
+}
+
+.h2back{
+    background:#a44ccd;
+    width:fit-content;
+    border-radius: 20px;
+    padding:5px;
+}
+
+h2{
+    font-size: 20px;
+}
+/* main */
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.main-text{
+    width: 50%;
+}
+
+.main-text h1{
+    font-size: 4.5rem;
+}
+
+.main-image{
+    width: 50%;
+}
+
+.main-image img{
+    width: 100%;
+}
+
+/* menu icon */
+.menu-icon{
+    display:none ;
+    z-index: 1;
+}
+
+/* info */
+
+.info{
+    background-color: var(--rc);
+}
+
+.info .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info .info-text{
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 50%;
+}
+
+.info .info-num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.info .info-num p{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+}
+
+.info .info-num p span{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--rneon);
+}
+
+section,footer{
+    padding: 2.7rem 0;
+}
+
+/* responsive */
+@media(max-width: 1075px){
+        .main-text h1{
+            font-size: 3.9rem;
+        }
+    }
+@media(max-width: 960px){
+    .menu-icon{
+            display: block;
+            cursor: pointer;
+        }
+        .menu{
+            position: fixed;
+            top:0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--rc);
+            left:100%;
+            transition: 0.3s;
+            flex-direction: column;
+            justify-content: center;
+        }
+          .menu li{
+            margin: 20px 0;
+        }
+        .menu.ativo{
+            left: 0;
+        }
+        
+        main .container{
+            flex-direction: column;
+        }
+        main .container .main-image{
+            width: 100%;
+        }
+        main .container .main-text{
+            width: 100%;
+            text-align: center;
+        }
+        .h2back{
+            margin: 0 auto;
+        }
+        .info .container{
+            flex-direction: column;
+        }
+        .info .info-num, .info .info-text{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            text-align: center; 
+            justify-content: center;
+        }
+        .info .info-num p{
+            margin: 25px 0; 
+        }
+        
+    }
+@media(max-width:480px){
+    .main-text h1{
+        font-size: 2.5rem;
+    }
+}
+@media(max-width:348px){
+    .menu-icon img{
+        width: 25px;
+        height: 25px;
+    }
+    .logo a{
+        font-size: 1.2rem;
+    }
+    }
+@media(max-width:308px){
+    .main-text h1{
+        font-size: 2rem;
+    }
+}
