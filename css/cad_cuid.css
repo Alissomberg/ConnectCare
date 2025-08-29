@@ -77,6 +77,7 @@ body {
     padding: 0.4rem 1rem;
     border-radius: 40px;
     cursor: pointer;
+    color: #fff;
 }
 
 .login-button button:hover {
@@ -85,16 +86,20 @@ body {
     transition: 0.5s;
 }
 
-.login-button button:hover a{
-    color: black;
+.login-button .back-to-login button:hover{
+    color: rgb(0, 0, 0);
     transition: 0.5s;
 }
 
 .login-button button a {
     text-decoration: none;
     font-weight: 500;
-    color: #fff;
 }
+
+.login-button a:hover{
+    color: black
+}
+
 
 .form-header h1::after {
     content: '';
