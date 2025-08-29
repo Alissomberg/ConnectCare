@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap');
 
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: "Bevan", sans-serif;
 }
 
 body {
@@ -14,7 +14,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #0c0ce94d;
+    background-image:url(../img/fundo-cadastro.jpg)
+}
+
+/* variáveis com a paleta de cores */
+:root{
+    --lilas: #a44ccd;
+    --rneon: #43224c;
+    --rneon2: #440e5a;
+    --rc: #e2d2ff;
+    --lc: #f5efe5;
+    --rpc: #7c6e96;
+
+    --btn-gradient: linear-gradient(#a44ccd,#43224c);
 }
 
 .container {
@@ -29,7 +41,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fde3a7d7;
+    background-color: var(--rpc);
     padding: 1rem;
 }
 
@@ -56,18 +68,26 @@ body {
 .login-button {
     display: flex;
     align-items: center;
+    
 }
 
 .login-button button {
     border: none;
-    background-color: #6c63ff;
+    background-color: #504e74;
     padding: 0.4rem 1rem;
-    border-radius: 5px;
+    border-radius: 40px;
     cursor: pointer;
 }
 
 .login-button button:hover {
-    background-color: #6b63fff1;
+    border: 2px solid rgba(0, 0, 0, 0.2);;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.login-button button:hover a{
+    color: black;
+    transition: 0.5s;
 }
 
 .login-button button a {
@@ -155,12 +175,14 @@ body {
     border: none;
     background-color: #6c63ff;
     padding: 0.62rem;
-    border-radius: 5px;
+    border-radius: 40px;
     cursor: pointer;
 }
 
-.continue-button button:hover {
-    background-color: #6b63fff1;
+.continue-button button:hover{
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2);;
+    transition: 0.5s;
 }
 
 .continue-button button a {
@@ -169,6 +191,13 @@ body {
     font-weight: 500;
     color: #fff;
 }
+
+
+.continue-button button:hover a{
+    color: black;
+    transition: 0.5s;
+}
+
 
 @media screen and (max-width: 1330px) {
     .form-image {
