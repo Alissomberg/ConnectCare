@@ -3,12 +3,12 @@
 *{
     margin: 0;
     padding: 0;
-    max-width: 100%;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     font-family: "Bevan", serif;
 }
+
 a{
     color: inherit;
 }
@@ -264,7 +264,6 @@ a:active{
 /* Login page e acesso */
 
 .login{
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -338,7 +337,7 @@ a:active{
     position: fixed;
     top: 20px;
     right: 20px;
-    color: rgb(47, 37, 53);
+    color: rgb(255, 255, 255);
 }   
 
 .register-link p{
