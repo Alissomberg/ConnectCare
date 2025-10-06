@@ -265,7 +265,6 @@ a:active{
 /* Login page e acesso */
 
 .login{
-    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -278,6 +277,7 @@ a:active{
 }
 
 .log-container{
+    margin: 15vh auto;
     width: 420px;
     background-color: transparent;
     border: 2px solid rgba(255,255,255,.2);;
@@ -335,7 +335,6 @@ a:active{
 
 .register-link{
     display: flex;
-    position: fixed;
     top: 20px;
     right: 20px;
     color: rgb(255, 255, 255);
@@ -390,7 +389,6 @@ a:active{
 
 
 .logo-access{
-    position:fixed;
     display: flex;
     top:20px;
     left: 20px;
