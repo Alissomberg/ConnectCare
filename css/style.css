@@ -337,7 +337,7 @@ a:active{
     position: fixed;
     top: 20px;
     right: 20px;
-    color: white;
+    color: rgb(162, 0, 255);
 }   
 
 .register-link p{
