@@ -263,6 +263,7 @@ a:active{
 /* Login page e acesso */
 
 .login{
+    min-height: 947px;
     display: flex;
     justify-content: center;
     align-items: center;
